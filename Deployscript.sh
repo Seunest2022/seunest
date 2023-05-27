@@ -36,7 +36,7 @@ sudo mysql < db-load-script.sql
 
 # Deploy and Configure Web
 echo "Installing required packages..."
-sudo yum install -y httpd php php-mysql
+sudo yum install -y httpd php php-mysqli
 sudo firewall-cmd --permanent --zone=public --add-port=80/tcp
 sudo firewall-cmd --reload
 
